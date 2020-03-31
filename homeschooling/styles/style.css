@@ -1,0 +1,480 @@
+body {
+font-family: 'Montserrat', sans-serif;    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Sen', sans-serif;
+
+}
+
+
+.adv {
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.advi {
+    background-image: url(../images/hero-image.jpg);
+    color: #FFF;
+    background-size: cover;
+}
+.advi h2 {
+    font-size: 4rem;
+}
+.advi > div {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.bar {
+    background: #212121;
+    color: #FFF;
+    line-height: 1.9em;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card {
+    background: #e8e8e8;
+    transition: .3s ease;
+}
+
+
+.card:hover {
+    -moz-box-shadow: 0 0 20px -2px #b5b5b5;
+    -webkit-box-shadow: 0 0 20px -2px #b5b5b5;
+    background: #FFF;
+    box-shadow: 0 0 20px -2px #b5b5b5;
+}
+
+.card:hover:after {
+
+    content: "";
+    display: block;
+    height: 100%;
+    position: relative;
+    top: -100%;
+    width: 2px;
+}
+
+.card:hover:before {
+    background: #b5b5b5;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 50%;
+}
+.card-comments:before {
+    content: "(";
+    font-family: webdings;
+    padding-right: 5px;
+}
+.card-comments:after {
+    content: ")";
+    font-family: webdings;
+    padding-left: 5px;
+}
+.card-content {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.card-date,
+.card-rating {
+    float: right;
+}
+
+.card-img {
+    width: 80%;
+}
+
+.card-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.card-views {
+    padding-right: 5px;
+}
+
+.card-views:before {
+    content: "N";
+    font-family: webdings;
+    padding-right: 5px;
+}
+
+.center,
+.caff > img {
+    width: 100%;
+}
+
+
+
+.con {
+    margin-top: -40px;
+    padding: 20px;
+}
+
+.con > span {
+    display: inline-block;
+}
+
+.form {
+    background: #212121;
+    color: #FFF;
+    height: 100%;
+}
+
+.grey {
+    background: #f7f7f7;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.img-con {
+    position: relative;
+    text-align: center;
+    top: -20px;
+}
+
+.k {
+    padding-top: 40px;
+}
+
+.light-grey {
+    background: #f2f2f2;
+}
+
+.pink-back {
+    background-color: rgba(181, 181, 181, .6);
+    padding: 1px;
+}
+
+.pink-font {
+    color: #b5b5b5;
+    font-weight: 700;
+
+}
+
+.logo > img {
+    max-width: 128px;
+
+}
+
+.rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
+
+.x {
+    padding-bottom: 4.1em;
+}
+
+
+
+button {
+    border: none;
+
+    color: white;
+
+    background: #981f1f;
+    border: none;
+
+
+    font-size: 1.5rem !important;
+    padding: 1rem 3rem;
+}
+
+.p {
+    padding-bottom: 4.1em;
+}
+
+cite {
+    background: #e8e8e8;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+footer {
+    background: url(../images/chicago.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: #FFF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+footer h5 {
+    font-size: 1.3rem;
+}
+form {
+    padding-bottom: 40px;
+}
+
+h1 {
+    line-height: 1.4em;
+}
+
+
+
+.menu-bar > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+h4 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+h4:after {
+    background: #FFF;
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 3px;
+    position: relative;
+    width: 2em;
+}
+
+header {
+    background: url(../images/hero-image-black.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    color: #FFF;
+
+}
+
+header h2 {
+    line-height: 2em;
+}
+
+header > div {
+    padding-bottom: 50px;
+}
+
+h3 {
+    line-height: 100px;
+
+}
+
+input[type="submit"] {
+    background: #981f1f;
+    border: none;
+
+    color: #FFF;
+    letter-spacing: 2px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    border: none;
+    color: #282828;
+    margin-bottom: 15px;
+    padding: 15px;
+
+
+}
+
+li {
+    list-style-type: none;
+}
+
+li:before {
+    color: #b5b5b5;
+    content: "✔";
+    padding: 8px;
+}
+
+
+p {
+    line-height: 1.5em;
+
+}
+
+ul li {
+    padding-bottom: 10px;
+}
+
+
+.caff > img {
+    filter: grayscale(100%);
+}
+
+.justify > div {
+    text-align: justify;
+}
+
+.h2-border {
+    font-size: 2em;
+    margin-bottom: 1.4remem;
+    text-align: left;
+}
+
+
+
+.d {
+    font-size: 40px !important;
+}
+
+
+
+.form-2 {
+    margin-top: 40px;
+
+}
+
+@media only screen and (max-width:62em) {
+
+    .advi > div > span {
+        font-size: 3em;
+    }
+
+    section,
+    header {
+        padding: 5px;
+    }
+
+    nav {
+      
+    }
+
+    .li-w ul {
+        margin-left: -40px !important;
+    }
+
+    .logo > img {
+        width: 50%;
+    }
+
+    .card {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .clicked {
+        margin-bottom: 100px;
+    }
+
+    .phone-padding {
+        padding: 20px;
+    }
+
+
+    .advi {
+        padding: 20px;
+    }
+
+}
+
+@media only screen and (min-width:62em) {
+    .menu-bar > div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+    .h2-border:after {
+        background: #b5b5b5;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 2em;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .advi > div > span {
+        font-size: 2em;
+    }
+
+    .advi {
+        padding-left: 15rem !important;
+
+    }
+
+    .logo {
+        padding-right: 100px;
+    }
+
+    .vhe {
+        height: 50vh;
+    }
+
+    .row-em {
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+
+    .margin-sm {
+        padding-left: 7rem !important;
+        height: 100%;
+    }
+
+    .pack {
+        width: 80%;
+    }
+
+    ul {
+        display: inline-block;
+    }
+
+    .li-w ul:first-child {
+        margin-left: -40px !important;
+    }
+
+    .logo {
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .clicked {
+
+        margin-left: 20px;
+        margin-bottom: 100px;
+
+    }
+
+    .card {
+        margin-left: 20px;
+        margin-bottom: 100px;  
+        margin-top: 50px;
+     
+    }
+
+    }
+
+    .advi {
+
+
+    }
+
+
+
+}
+
+@media only screen and (min-width:75em) {}

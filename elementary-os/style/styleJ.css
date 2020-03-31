@@ -1,0 +1,213 @@
+﻿/*kontenery*/
+
+.benefits-con {
+	background-image: url(../assets/images.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+}
+
+
+
+.podrecznik-con {
+	color: white;
+	background: linear-gradient(220deg, #f95f00, #cc00f9);
+}
+
+.footer-con {
+	background: #ffffff;
+	color: #cccccc;
+}
+
+
+/*paddingi*/
+
+.container-top-bottom {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.container-top {
+	padding-top: 4rem;
+}
+
+.container-left-right {
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+.container-top-little {
+	padding-top: 1rem;
+}
+
+.container-bottom-little {
+	padding-bottom: 1rem;
+}
+
+.img-all-width-mob {
+	width: 60%;
+}
+
+@media only screen and (max-width:48rem) {
+	.container-left-right {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.img-all-width-mob {
+		width: 100%;
+	}
+
+}
+
+
+/*buttony*/
+
+.button {
+	background: none;
+	border: none;
+	letter-spacing: 1px;
+	margin: 0px;
+	padding: 15px 25px 15px 25px;
+	transition: .3s ease;
+	cursor: pointer;
+}
+
+.button-outline-white {
+	border: 1px solid white;
+	color: white;
+
+}
+
+.button-outline-white:hover {
+
+	color: #777777;
+	background: white;
+}
+
+
+
+.button-dark {
+	color: white;
+	background: rgb(51, 54, 89);
+	border: 1px solid transparent;
+}
+
+.button-dark:hover {
+	color: rgb(51, 54, 89);
+	border: 1px solid rgb(51, 54, 89);
+	background: transparent;
+}
+
+
+
+.button-outline-dark {
+	border: 1px solid black;
+}
+
+
+
+.button-outline-dark:hover {
+	border: 1px solid transparent;
+	color: white;
+	background: black;
+}
+
+.button-large {
+	padding: 1rem 4rem;
+}
+
+.button-small {
+	padding: 0.5rem 2rem;
+
+}
+
+
+/*img*/
+
+.male-logo-app {
+	width: 5rem;
+
+}
+
+.image-person-av {
+	height: 4rem;
+	width: 4rem;
+	border-radius: 100%;
+}
+
+.img-all-width {
+	width: 100%;
+}
+
+.input-nostyled {
+	border: 0;
+	padding: .5rem;
+}
+
+
+/* cień */
+
+.shadow-dark {
+	box-shadow: 0px 0px 48px rgba(51, 54, 89, .3);
+}
+
+.shadow-light {
+
+	box-shadow: 1px 1px 1px rgba(200, 200, 200, .3);
+}
+
+.shadow-little {
+	box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.25);
+
+}
+
+/*maksymalna szerokosc tekstu*/
+
+@media only screen and (min-width: 62em) {
+	.max-of-text {
+		padding-left: 15rem;
+		padding-right: 15rem;
+
+	}
+}
+
+.container-bottom {
+	padding-bottom: 4rem;
+}
+
+
+
+.margin-only-on-mobile {
+	display: none;
+}
+
+@media only screen and (max-width:64em) {
+	.margin-only-on-mobile {
+		margin: 4rem 0;
+		display: flex;
+	}
+	
+		.margin-bottom-only-on-mobile {
+		margin-bottom:2rem;
+		
+	}
+	.nasze-app-con {
+		box-shadow: none;
+
+	}
+}
+
+.input-height-of-button {
+		padding: 15px 25px 15px 25px;
+
+}
+
+
+
+.justify {
+	text-align: justify;
+}
+
+

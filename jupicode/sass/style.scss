@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+$family-sans-serif: "Nunito",
+sans-serif;
+
+@import "../node_modules/flexbox-grid-sass/src/flexbox-grid.scss";
+@import "../node_modules/bulma/bulma.sass";
+
+
+
+.section.is-primary {
+  background-color: $primary;
+}
+
+nav.navbar {
+  padding: 1rem 0;
+}
+
+
+figure.image {
+  margin: auto;
+}
+
+.my-offer .box {
+  padding: 0;
+  width: 100%;
+
+  .columns {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content .column {
+    padding: 50px;
+    border-right: 1px solid $border;
+
+    @media screen and (max-width: $tablet) {
+      border-right: 0;
+      border-bottom: 1px solid $border;
+    }
+
+  }
+
+  .content .column:last-child {
+    padding: 50px;
+    border-right: 0;
+  }
+}
+
+.navbar.is-transparent {
+  position: fixed;
+  width: 100%;
+
+}
+
+.are-hero-headers {
+  transition: .5s ease-out;
+  position: relative;
+  left: -5000px;
+ 
+}
+
+.is-hero-custom-bg {
+  transition: .5s ease-out;
+  position: relative;
+  right: -5000px;
+ 
+
+  @media screen and (max-width: $tablet) {
+    display: none;
+
+  }
+
+}
+
+.hero {
+
+  @media screen and (max-width: $desktop) {
+    padding-top: 5rem;
+    min-height: 50vh;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+
+  }
+}
+
+.is-padding-bottom-text {
+
+  margin-bottom: 2rem;
+}
+
+.portfolio {
+    overflow: hidden;
+}
+
+.is-portfolio-tn {
+
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+
+  img {
+
+    display: block;
+    position: relative;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  &:hover img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+  }
+}
+
+.is-contact-us {
+  color: white;
+  background: linear-gradient(-34deg, $primary, $success);
+  margin-top: 5rem;
+
+  &.has-shadow {
+    box-shadow: 10px 10px 50px 0 $primary;
+  }
+}
+
+.is-team-title {
+  transition: all .4s ease;
+
+  &:hover {
+    color: $primary !important;
+
+  }
+}
+
+.is-team-round-img {
+  transition: all .4s ease;
+  margin-bottom: 2rem !important;
+
+  &:hover:before {
+    transform: rotate(90deg);
+    transition: all 300ms ease;
+  }
+
+
+
+  &:before {
+
+    content: "";
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    display: flex;
+    top: -15%;
+    left: -15%;
+    background-image: url(../assets/img/round.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+  }
+
+
+
+
+}

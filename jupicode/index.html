@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <nav class="navbar is-transparent">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img src="assets/img/logo.svg" alt="Logo Jupicode: agencja interaktywna z Torunia">
+        </a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <div class="control"><a href="" class="navbar-item is-black"><span>Kim jesteśmy?</span></a></div>
+              <div class="control"><a href="" class="navbar-item is-black"><span>Cennik</span></a></div>
+              <p class="control"><a href="" class="button is-primary is-outlined is-rounded"><span>Kontakt</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+  <section class="hero j-hero">
+    <div class="hero-body ">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-half are-hero-headers">
+            <h1 class="title is-spaced is-size-1 is-size-2-mobile">Agencja interaktywna dla Ciebie.</h1>
+            <h2 class="subtitle is-size-5">Pomagamy spełniać marzenia!</h2>
+            <a href="" class="button is-primary is-rounded is-medium">Zobacz naszą ofertę</a>
+          </div>
+          <div class="column is-half is-hero-custom-bg">
+            <img src="assets/img/doggie.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="container"></div>
+    </div>
+  </section>
+
+
+
+  <section class="section is-primary is-medium has-text-white">
+    <div class="container">
+      <div class="columns  is-vcentered is-centered has-text-centered">
+        <div class="column is-half">
+          <figure class=""><img src="assets/img/path.svg" alt=""></figure>
+          <br>
+          <h2 class="is-size-2 title has-text-white">Jesteśmy Jupicode</h2>
+          <p>Naszą firmę tworzą młode osoby z pasją. Co nas wyróżnia na tle innych agencji? dzięki czemu, w połączeniu z zmysłem estetycznym, potrafimy zdziałać cuda. Przekonaj się i Ty! </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section my-offer">
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <div class="columns has-text-centered">
+            <div class="column">
+              <figure class="image is-48x48"><img src="assets/img/watermelon-fruit-slice-outline-with-drops.svg" alt=""></figure>
+              <h3>Jesteśmy Pasjonatami</h3>
+              <p class="is-spaced">Praca w branży dla nas to dobra, kreatywna zabawa. </p>
+              <p class="has-text-primary">Całe życie wychowywaliśmy się z Internetem.</p>
+              <p class="is-size-7"> Spędziliśmy dziesiątki tysięcy godzin na różnych stronach www, dlatego dziedzina ta nie jest nam obca. Postaramy się połączyć najnowsze trendy z tożsamością Twojej marki, tworząc estetyczną, przyjemną dla oka witrynę www. </p>
+            </div>
+            <div class="column">
+              <figure class="image is-48x48"><img src="assets/img/light-bulb-outline.svg" alt=""></figure>
+              <h3>Cały nasz zespół to informatycy. </h3>
+              <p class="is-spaced">Każdy z nas ma solidną, techniczną wiedzę na temat webserwisów.</p>
+              <p class="has-text-primary">Tworzymy strony WWW wykorzystując różne frameworki, na różne platformy.</p>
+              <p class="is-size-7">Wdrożymy Twój serwis, w taki sposób, byś nie miał problemu z jego obsługą. Przecież szanujemy Twój i nasz czas.</p>
+            </div>
+            <div class="column">
+              <figure class="image is-48x48"><img src="assets/img/ice-cream-cone-outline.svg" alt=""></figure>
+              <h3>Zanim weźmiemy zlecenie, chcemy Cię poznać.</h3>
+              <p class="is-spaced">Każda nowa strona to dla nas kolejne wyzwanie. Witryna WWW to nie tylko kawałek kodu do napisania - to dusza całej firmy i jej członków. </p>
+              <p class="has-text-primary">Dlatego spisujemy brief i rozmawiamy</p>
+              <p class="is-size-7">Dzięki temu poznamy Ciebie i Twój biznes. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section has-text-centered">
+    <div class="container">
+
+      <div class="column">
+        <h1 class="title ">Proces produkcyjny</h1>
+      </div>
+      <div class="column"></div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/1.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/2.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/3.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/4.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/5.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/6.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/7.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/8.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+      <div class="column is-one-third">
+        <div class="is-portfolio-tn"><img src="assets/img/9.png" alt="" class="is-portfolio-tn-img"></div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="section is-contact-us is-medium is-primary is-bold">
+    <div class="container">
+      <div class="columns  is-vcentered is-centered has-text-centered">
+        <div class="column is-half">
+          <figure class=""><img src="assets/img/path.svg" alt=""></figure><br>
+          <h2 class="is-size-2 title  has-text-white">Skontaktuj się z nami!</h2>
+          <p class="subtitle is-5  has-text-white">Jesteśmy otwarci na różnorodną współpracę.</p>
+          <a href="" class="button is-rounded is-outlined is-white">Napisz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section is-small is-vcentered">
+    <div class="container">
+      <div class="column has-text-centered">
+        <h3 class="title is-3">Nasz zespół</h3>
+        <br>
+      </div>
+      <div class="columns has-text-centered is-centered is-vcentered">
+
+        <div class="column is-one-quarter ">
+          <figure class="image is-128x128 is-team-round-img"><img src="assets/img/hazel.jpg" alt="" class="is-rounded ">
+
+          </figure>
+          <h3 class="title is-size-3 is-team-title">Lena Szafirowicz</h3>
+          <p class="subtitle is-size-6">Kocham zarywać nocki, pić nałogowo kawę i kodzić projekty. Lubię też gry retro. Historią oraz politologią interesuję się od 13 roku życia. Te przyziemne rzeczy sprawiają mi największą radość w życiu.</p>
+          <br>
+        </div>
+        <div class="column is-one-quarter is-offset-one-quarter ">
+          <figure class="image is-128x128  is-team-round-img"><img src="assets/img/dybek.jpg" alt="" class="is-rounded ">
+
+          </figure>
+          <h3 class="title is-size-3 is-team-title">Mateusz Wirczynski</h3>
+          <p class="subtitle is-size-6">Jestem spokojną, przyjacielską osóbką. Wolny czas poświęcam na pisaniu i projektowaniu stron www. Sporadycznie zdarza mi się coś nabazgrać.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="section is-centered has-text-centered is-primary has-text-white">
+    <div class="container">
+
+      <div class="column">
+        Wirtualne Biuro, 87-100 Toruń
+      </div>
+      <div class="column">
+        <p> 2018 &copy; Jupicode</p>
+      </div>
+
+
+    </div>
+  </footer>
+ 
+  <script src="scripts/anim.js"></script>
+</body>
+
+</html>

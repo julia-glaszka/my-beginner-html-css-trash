@@ -1,0 +1,274 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+
+#Navbar-animated .shadow-little {
+    box-shadow: 0 0;
+}
+
+.navbar .icon-socialmedia {
+    position: absolute;
+    left: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-socialmedia a {
+    font-size: 1.3em;
+    padding: 0 0.8em 0 0.8em;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-socialmedia a:hover {
+    animation-name: option;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+.icon-socialmedia .fa-facebook-f {
+    font-size: 1.6em;
+    margin-left: 1em;
+}
+
+
+.option-menu {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.option-menu a:not(:first-child) {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1.2em;
+
+
+}
+
+.media {
+    display: none;
+}
+
+.option-menu a:first-child {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1.2em;
+}
+
+.option-menu a:hover {
+    color: white;
+    animation-name: option;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+
+.icon {
+    display: none;
+}
+
+.icon div {
+    padding: 0.15em;
+    width: 2em;
+    margin: 0.26em;
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+
+
+#hero {
+    width: 100%;
+
+}
+
+
+/*
+.hero-button{
+    margin-top: 7vh;
+    margin-bottom: 16.6vh;
+    font-size: 4vh;
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    border: 0.2vh solid black;
+   
+}
+*/
+
+.hero-box {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#5b33e9;
+    padding: 2.3em 0 2.3em 0;
+}
+
+.hero-box:hover {
+    background-color: #4a2ac0;
+    transition: 0.3s;
+}
+
+.hero-box i {
+
+    font-size: 3em;
+}
+
+.hero-box p {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+
+/*
+#welcome-box{
+    padding: 4vh 0 4vh 0;
+}
+*/
+
+.welcome-info-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome-ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.welcome-ul li {
+    list-style: none;
+    margin-top: 17px;
+    font-size: 1.1em;
+}
+
+.welcome-ul li i {
+    margin-right: 7px;
+}
+
+
+.offer-box {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 60%;
+    background-color: red;
+
+}
+
+
+
+@keyframes option {
+    0% {
+        color: rgba( 0, 0, 0, 0.058);
+    }
+    25% {
+        color: black;
+    }
+}
+
+@keyframes option-responsive {
+    0% {
+        color: rgba( 0, 0, 0, 0.058);
+    }
+    25% {
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 1119px) {
+    .navbar {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .icon-socialmedia a {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 841px) {
+    .navbar {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        height: 5em;
+        z-index: 100;
+    }
+    #Navbar-animated .shadow-little {
+        box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.25);
+    }
+    .option-menu .media {
+        border-top: 1px solid white;
+        display: flex;
+    }
+    .media a {
+        color: white !important;
+        font-size: 1.25em;
+        padding: 0.7em 1em 0.7em 1em;
+    }
+    #info-colors p {
+        font-size: 0.7em;
+    }
+    .option-menu {
+        display: flex;
+        width: 100%;
+        background-color: #1e1e1e;
+        flex-direction: column;
+        position: absolute;
+        top: 4em;
+        transform: translateX(-100%);
+    }
+    .option-menu .option {
+        font-size: 0.83em;
+        color: white !important;
+    }
+    .option-menu a:hover {
+        animation-name: option-responsive !important;
+    }
+    .icon {
+        background-color: transparent;
+        margin: 1vh;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        width: 7vh;
+    }
+    .option-menu.responsive-in {
+        transform: translateX(0%);
+        transition: 1.3s;
+        width: 100%;
+        display: flex;
+        transition: 0.5s;
+        flex-direction: column;
+    }
+    .option-menu.responsive-out {
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+}

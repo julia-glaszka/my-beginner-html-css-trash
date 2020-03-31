@@ -1,0 +1,133 @@
+body {
+
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.paddings {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
+
+.is-48px {
+    width: 48px;
+    padding: 48px;
+}
+
+h1 {
+    font-size: 4rem;
+    word-break: normal;
+}
+
+h2 {
+    font-size: 3rem;
+    word-break: normal;
+}
+
+.box > div > p {
+    line-height: 168%;
+    font-size: 1.4rem;
+}
+
+.header-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 10%;
+}
+
+.box-top-bottom {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (min-width:62em) {
+    .header-content {
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+    .box {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .box-top-bottom {
+        padding-top: 5rem;
+
+    }
+    .paddings {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+.navbar-logo {
+    font-weight: bold;
+}
+
+
+
+.img-all-width {
+    width: 100%;
+
+}
+
+
+#hero {
+    position: relative;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    animation: header 5s ease infinite;
+}
+
+@keyframes header {
+    0% {
+        background: #f6aff8
+    }
+
+    50% {
+        background: #96a0e3
+    }
+
+    75% {
+        background: #d779ac
+    }
+
+    100% {
+        background: #f6aff8
+    }
+}
+
+.header-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.justify {
+    text-align: justify;
+}
+
+
+.header-subtitle-text {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}

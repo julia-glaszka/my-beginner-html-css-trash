@@ -1,0 +1,22 @@
+{
+  "name": "jupicode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "flexbox-grid-sass": "^4.1.0",
+    "flexboxgrid": "^6.3.1",
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "smoothscroll-for-websites": "^1.4.6"
+  }
+}

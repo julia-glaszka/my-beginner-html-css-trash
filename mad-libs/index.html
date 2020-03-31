@@ -1,0 +1,191 @@
+<!--
+This code is under construction!
+Written under the influence of the moment.
+
+This is supposed to be the complex Mad Libs app. I dont know when I will finish it.
+
+designed by @Julianne
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <div class="progress-container">
+        <div id="progress">
+
+        </div>
+    </div>
+    <div class="all">
+
+
+
+        <div class="container">
+
+            <img src="https://www.shareicon.net/data/2016/08/04/806674_art_512x512.png" id="ico">
+            <span id="title">
+                Mad Libs App!
+            </span>
+
+            <div id="field">
+                <div class="clean">Type:<span id="polecenie"></span> </div>
+                <input type="text" id="content" class="input" required>
+            </div>
+
+            <div id="history"></div>
+            <input type="submit" id="submit" class="libb" value="Lib it!">
+        </div>
+        <button id='back' class='libb' >Back</button>
+        <div class="footer">Designed by Hvzel</div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                var colors = ["#ff0e4a", "#fd17a5", "#ff9a28", "#fffb00", "#00ff9d", "#60ff16"];
+
+                function render() {
+                     
+                    $("#back").hide();
+
+                    $(".container").html(`<img src="https://www.shareicon.net/data/2016/08/04/806674_art_512x512.png" id="ico">
+                    <span id="title">
+                        Mad Libs App!
+                    </span>
+
+                    <div id="field">
+                        <div class="clean">Type:<span id="polecenie">Noun</span> </div>
+                        <input type="text" id="content" class="input" required>
+                    </div>
+
+                    <div id="history"></div>
+                    <input type="submit" id="submit" class="libb" value="Lib it!">`)
+                    $("#progress").width("0%");
+                    $("#progress").css("backgroundColor", colors[0]);
+
+                }
+                render();
+                var submit = $("#submit");
+                var polecenia = [];
+                var content = $("#content");
+
+                var i = 0;
+                var odpowiedzi = ["Noun", "Verb - base form", "Noun", "Noun", "Verb - present ends in ING",
+                    "Verb - present ends in ING", "Verb - present ends in ING", "Verb - present ends in ING",
+                    "Noun", "Adjective", "Noun - plural", "Adjective", "Noun - plural",
+                    "First name of a person ends in S", "Adjective", "Verb - present ends in ING",
+                    "Noun -plural", "Silly word", "Noun", "Noun", "Proper noun - plural",
+                    "Verb - present ends in ING"
+                ];
+
+
+                $("#polecenie").text(odpowiedzi[i++]);
+
+                function check() {
+                    var barWidth = 100 * i / odpowiedzi.length;
+
+                    if (content.val().length > 1) {
+                        polecenia.push(content.val());
+                        $("#polecenie").text(odpowiedzi[i++]);
+                        content.val(" ");
+                        $("#progress").width(barWidth + "%");
+                        if (barWidth < 15) {
+                            console.log(barWidth)
+                            $("#progress").css("backgroundColor", colors[0]);
+                        } else if (barWidth < 30) {
+                            $("#progress").css("backgroundColor", colors[1]);
+
+                        } else if (barWidth < 50) {
+                            $("#progress").css("backgroundColor", colors[2]);
+
+                        } else if (barWidth < 70) {
+                            $("#progress").css("backgroundColor", colors[3]);
+
+                        } else if (barWidth < 85) {
+                            $("#progress").css("backgroundColor", colors[4]);
+
+                        } else {
+                            $("#progress").css("backgroundColor", colors[5]);
+                        }
+
+                        if (i == odpowiedzi.length) {
+                            $("#progress").width("100%");
+                            content.remove();
+                            submit.remove();
+                            $(".clean").remove();
+                            $("#history").html("Your History<br/>"  +
+                                " Camp Steeb Have you ever been to Camp Steeb before? Well " +
+                                polecenia[1] +
+                                " on down this " +
+                                polecenia[2] +
+                                " and bring a " +
+                                polecenia[3] +
+                                " ! This year Camp 3 will be a blast! Activities include" +
+                                polecenia[4] +
+                                ", " +
+                                polecenia[5] +
+                                ", " +
+                                polecenia[6] +
+                                " and " + polecenia[7] +
+                                " off " +
+                                polecenia[8] +
+                                "! In the morning we eat " +
+                                polecenia[9] +
+                                ", " +
+                                polecenia[10] +
+                                " at " +
+                                polecenia[11] +
+                                " Diner and then go to play dodge the " +
+                                polecenia[12] +
+                                " in the field. In the afternoon, we eat " +
+                                polecenia[13] +
+                                " " + polecenia[14] +
+                                " at " + polecenia[15] +
+                                ", " + polecenia[16] +
+                                " Treats and then go " +
+                                polecenia[17] +
+                                " off " +
+                                polecenia[18] +
+                                " at Mount" +
+                                polecenia[19] +
+                                " At night, we eat " +
+                                polecenia[20] +
+                                " gut pizza and then have a " +
+                                polecenia[21] +
+                                " fire to roast " +
+                                polecenia[22] +
+                                " To conclude the day, we have a 23 competition and then go to sleep "
+                                );
+                                $("#back").show();
+                        }
+                    }
+
+                }
+                $("#back").on("click", function() {location.reload()} )
+                submit.on("click", check);
+                $(document).on('keypress', function (e) {
+                    if (e.which == 13) {
+                        check();
+                    }
+                });
+
+                $("#back").on("click", render);
+
+            });
+    </script>
+
+</body>
+
+</html>

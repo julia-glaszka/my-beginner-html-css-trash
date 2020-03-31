@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans- serif;
+}
+.no-paddings-x {
+      padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.no-paddings-y {
+      padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+h4 {
+    font-size: 1.6rem;
+}
+
+cite {
+    font-size: 1.2rem;
+}
+.container-fluid {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+p,
+ul,
+span,
+cite,
+i {
+    line-height: 168%;
+}
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+ul li {
+    padding-top: 1rem;
+}
+hr.is-black {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.newsletter {
+  
+    
+}
+.newsletter input[type="email"] {
+    padding: 1rem 0;
+    width: 70%;
+    border: 0;
+    padding-left: 1rem;
+}
+
+.newsletter input[type="submit"] {
+    padding: 1rem 0;
+    width: 30%;
+    background: black;
+    color: white;
+    border:0;
+}
+
+.image-fullwidth {
+    width: 100%;
+    height: auto;
+}
+
+.image-container {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.image-container .caption {
+    margin-top: 1rem;
+    color: gray;
+    border-left: 3px solid lightgray;
+    padding-left: 10px;
+    background: #fbfbfb;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input[type="button"] {
+       background-color: transparent;
+    font-weight: light;
+    border: none;
+    transition: .3s ease;
+    
+      padding: 1.5rem 5rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top: 2vh;
+    letter-spacing: 2px;
+}
+
+input[type="button"].is-black {
+    color: black;
+    border: 1px solid black;
+}
+input[type="button"].is-black:hover,input[type="submit"].is-black:hover{
+    color: #ffcc00;
+    background: black;
+    border: 1px solid black;
+}
+
+
+input[type="button"].is-white {
+    color: white;
+    border: 1px solid white;
+}
+
+
+input[type="button"].is-white:hover {
+    color: black;
+    background: white;
+    border: 1px solid white;
+}
+
+.container-spaced {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+@media only screen and (min-width: 64em) {
+    .container-spaced {
+        padding-right: 2rem;
+        padding-right: 10rem !important;
+        padding-left: 10rem !important;
+
+    }
+
+    hr {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+
+
+    }
+}
+
+@media only screen and (min-width: 75em) {
+    .container-spaced {
+        padding-right: 2rem;
+        padding-right: 10rem !important;
+        padding-left: 10rem !important;
+
+    }
+
+    hr {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+
+    }
+}
+
+.text-modern {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 1vh;
+}
+
+
+.fixed-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: -1px;
+    background: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 4px 4px rgba(45, 45, 45, .3);
+
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+         margin-right: 0; 
+    margin-left: 0;
+}
+.fixed-nav > div {
+    padding: 0.9em;
+}
+
+.fixed-nav a {
+    padding-left: 2em;
+}
+
+.img-logo {
+
+    height: 2rem;
+    width: auto;
+}
+
+
+
+.bu {
+    padding: 0.9em;
+}
+
+
+.little-img {
+    width: 128px;
+    border-radius: 100%;
+    height: 128px;
+    margin-top: 5vh;
+}
+
+
+.second {}
+
+@media screen and (max-width: 780px) {}
+
+@media screen and (min-width: 781px) {
+    #img {
+        width: 50vh;
+        padding-top: 10vh;
+    }
+
+}
+
+.copyleft {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.hero {
+    background-image: url(assets/hero.png);
+
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 2rem;
+    padding-top: 2rem
+}
+
+.hero .description {
+    font-size: 1.5rem;
+}
+
+.inside {
+    padding: 2vh;
+    padding-bottom: 8vh;
+    padding-top: 8vh;
+}
+
+
+.is-black {
+    background: black;
+}
+.has-text-white {
+    color: #fff;
+}
+
+
+
+.filter-img {
+    filter: grayscale();
+
+
+}
+
+.sec-hero {
+    background-image: url("assets/mises-hayek.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-size: cover;
+}
+
+.third {}
+
+.four {}
+
+.menu {
+
+    height: 3em;
+
+}
+
+.is-primary {
+    background: #ffcc00;
+
+}
+
+#bar {
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    text-align: center;
+    line-height: 130%;
+    top: 30vh;
+    background: white;
+    box-shadow: 1px 2px 1px 1px grey;
+}
+
+.big-bar {
+    width: 15vh;
+    height: 8vh;
+
+}
+
+.logo {
+    width: 100%;
+    height: 15vh;
+}
+
+
+
+
+.liberty {
+    background-image: url(https://img00.deviantart.net/952c/i/2010/027/8/e/a_libertarian__s_bookshelf_by_jan3090.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+
+
+}
+
+
+a {
+    color: #101010;
+    text-decoration: none;
+}
+.socials {
+    padding: 1rem 0 ;
+}
+
+.socials a {
+    padding-left: 0.5rem;
+}

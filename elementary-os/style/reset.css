@@ -1,0 +1,54 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+		font-family: 'HelveticaLight', sans-serif;
+		font-weight: normal;
+		letter-spacing: 1px;
+}
+
+h1{
+	font-size: 3em;
+}
+h2{font-size: 2em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.4em;
+}
+h5{font-size: 1.3em;
+	
+}
+h6{font-size: 1.1em;
+	
+}
+
+hr {
+	height: 1px;
+	color: #cecece;
+	background-color: #cecece;
+	border: none;
+}
+
+iframe {
+	height: 40vh;
+	width: 100%;
+}
+
+
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url('../fonts/Helvetica-Bold.otf'); /* IE9 Compat Modes */
+  
+}
+
+@font-face {
+  font-family: 'HelveticaLight';
+  src: url('../fonts/HelveticaLt.ttf'); /* IE9 Compat Modes */
+  
+}

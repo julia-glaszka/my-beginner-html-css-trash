@@ -1,0 +1,141 @@
+body {
+    padding: 25vh;
+    background: white;
+    background-size: 100vh 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.container::before {
+/*    content: 'Hiii 🤗 Its pure Css :3';*/
+    color: black;
+    font-size: 1.5em;
+    display: block;
+    position: absolute;
+    margin-top: -80px;
+
+}
+
+.container::after {
+/*    content: 'created by Hvzel';*/
+    color: black;
+    display: block;
+    position: absolute;
+    width: 30vh;
+    margin-top: 320px;
+    text-align: center;
+    left: -30px;
+}
+
+.phone {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    position: absolute;
+
+}
+
+.phone div {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+   background: rgb(30, 50, 230);
+background: -moz-linear-gradient(354deg, rgb(30, 50, 230) 30%, rgb(88, 52, 153) 100%);
+background: -webkit-linear-gradient(354deg, rgb(30, 50, 230) 30%, rgb(88, 52, 153) 100%);
+background: -o-linear-gradient(354deg, rgb(30, 50, 230) 30%, rgb(88, 52, 153) 100%);
+background: -ms-linear-gradient(354deg, rgb(30, 50, 230) 30%, rgb(88, 52, 153) 100%);
+background: linear-gradient(84deg, rgb(30, 50, 230) 30%, rgb(88, 52, 153) 100%);
+
+    border: 2px solid rgb(30, 50, 230);
+    border-radius: 3%;
+}
+
+.phone .front {
+
+    transform: rotateY(0deg) translateZ(30px);
+    width: 100px;
+    height: 200px;
+
+
+}
+
+.front::after {
+    content: '';
+    color: black;
+    background-image: url(http://cdn.iphonehacks.com/wp-content/uploads/2015/10/veexilum-ios-9.jpg);
+    background-size: cover;
+    display: block;
+    width: 80px;
+    height: 160px;
+    position: relative;
+    top: 11px;
+    left: 9px;
+    transform: rotateX(180deg);
+}
+
+.front::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 100%;
+    left: 40%;
+    top: 5px;
+}
+
+.phone .back {
+    transform: rotateX(180deg) translateZ(0px) translateX(0px);
+
+    width: 100px;
+    height: 200px;
+
+}
+
+.phone .right {
+    transform: rotateY(90deg) translateZ(86px) translateX(-15px);
+    height: 200px;
+    width: 30px;
+}
+
+.phone .left {
+    transform: rotateY(-90deg) translateZ(15px) translateX(15px);
+
+    height: 200px;
+    width: 30px;
+}
+
+.phone .top {
+    transform: rotateX(90deg) translateZ(14px) translateY(15px);
+
+    width: 100px;
+    height: 30px;
+}
+
+
+.phone .bottom {
+    transform: rotateX(-90deg) translateZ(185px) translateY(-14px);
+
+    height: 30px;
+    width: 100px;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotateY(0) rotateX (0);
+    }
+
+    to {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
+
+.phone {
+    animation: spinning 6s infinite linear;
+}
