@@ -14,7 +14,7 @@
     "bulma": "^0.7.1",
     "flexbox-grid-sass": "^4.1.0",
     "flexboxgrid": "^6.3.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "smoothscroll-for-websites": "^1.4.6"
